@@ -161,20 +161,6 @@ module arcino_alu (
     end
   end
 
-  // GTE unsigned:
-  // (a[31] == 1 && b[31] == 1) => adder_result[31] == 0
-  // (a[31] == 0 && b[31] == 0) => adder_result[31] == 0
-  // (a[31] == 1 && b[31] == 0) => 1
-  // (a[31] == 0 && b[31] == 1) => 0
-
-  // GTE signed:
-  // (a[31] == 1 && b[31] == 1) => adder_result[31] == 0
-  // (a[31] == 0 && b[31] == 0) => adder_result[31] == 0
-  // (a[31] == 1 && b[31] == 0) => 0
-  // (a[31] == 0 && b[31] == 1) => 1
-
-
-
   // generate comparison result
   logic cmp_result;
 
